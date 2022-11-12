@@ -20,6 +20,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
         <title>Sobre nosotros</title>
+        <meta name="description" 
+              content="Formulario de contacto para que puedas comunicarte con los desarrolladores
+                       del video juego Regrets. Cuéntanos, ¿qué te gustó más? ¿qué mejorarías?
+                       ¿tienes alguna idea para compartir?">
+        <meta name="keywords"  content="Videojuegos, metroidvania, regrets, plataformero, juego para pc">
     </head>
     <body>
         <header>
@@ -51,11 +56,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="novedades.html">Novedades</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="galeria.html">Galeria <span class="sr-only">(current)</span></a>
-                                </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                    <a class="nav-link" href="galeria.html">Galeria</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -63,31 +68,49 @@
                 </div>
             </div>
 
-            <div class="banner" id="banner_home">
-                <h1>Galería</h1>
+            <div id="banner_home">
+                <h1>Contáctenos</h1>
             </div>
         </header>
         
         <main>
             <div class="main-content">
-                <section class="images-gallery">
-                    <h2>Imágenes</h2>
-                    <div class="images-gallery-panel">
-                        <img src="../images/bosque.jpeg" alt="">
-                        <img src="../images/check.jpg" alt="">
-                        <img src="../images/img1.png" alt="">
-                        <img src="../images/Kaori.jpg" alt="">
-                        <img src="../images/Kaori1.png" alt="">
-                        <img src="../images/novedades.jpeg" alt="">
-                    </div>
-                </section>
-                <hr>
-                <section class="videos-gallery">
-                    <h2>Videos</h2>
-                    <div class="videos-gallery-panel">
-                        <iframe src="https://drive.google.com/file/d/1tCdSs4AwDgj-w72hhFh0-qdTvU5ht-z-/preview"></iframe>
-                        <iframe src="https://drive.google.com/file/d/1tCdSs4AwDgj-w72hhFh0-qdTvU5ht-z-/preview"></iframe>
-                    </div>
+                <section>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="txt_name">Nombre completo</label>
+                            <input type="text" 
+                                   id="txt_name" 
+                                   placeholder="Nombre completo"
+                                   class="form-control"
+                                   aria-describedby="name_help"
+                                   required>
+                            <small id="name_help" class="form-text text-muted">
+                                Ingrese su nombre y apellido.
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txt_email">Correo electrónico</label>
+                            <input type="text" 
+                                   id="txt_email" 
+                                   placeholder="Correo electrónico"
+                                   class="form-control"
+                                   aria-describedby="mail_help"
+                                   required>
+                            <small id="name_help" class="form-text text-muted">
+                                Verifique correctamente su correo electrónico antes de enviar el formulario.
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txt_message">Mensaje</label>
+                            <textarea class="form-control" id="txt_message" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-secondary" type="reset">Limpiar</button>
+                    </form>
                 </section>
             </div>
         </main>

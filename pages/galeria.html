@@ -20,6 +20,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
         <title>Sobre nosotros</title>
+        <meta name="description" 
+              content="Galería de imágenes y videos del juego plataformero para PC, ¡Regrets!">
+        <meta name="keywords"  content="Videojuegos, metroidvania, regrets, plataformero, juego para pc">
     </head>
     <body>
         <header>
@@ -51,11 +54,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="novedades.html">Novedades</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="galeria.html">Galeria</a>
-                                </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="galeria.html">Galeria <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -63,49 +66,61 @@
                 </div>
             </div>
 
-            <div class="banner" id="banner_home">
-                <h1>Contáctenos</h1>
+            <div id="banner_home">
+                <h1>Galería</h1>
             </div>
         </header>
         
         <main>
             <div class="main-content">
-                <section>
-                    <form action="">
-                        <div class="form-group">
-                            <label for="txt_name">Nombre completo</label>
-                            <input type="text" 
-                                   id="txt_name" 
-                                   placeholder="Nombre completo"
-                                   class="form-control"
-                                   aria-describedby="name_help"
-                                   required>
-                            <small id="name_help" class="form-text text-muted">
-                                Ingrese su nombre y apellido.
-                            </small>
-                        </div>
+                <section class="images-gallery">
+                    <h2>Imágenes</h2>
+                    
+                    <!-- Gallery -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="../images/bosque.jpeg" 
+                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 alt="">
 
-                        <div class="form-group">
-                            <label for="txt_email">Correo electrónico</label>
-                            <input type="text" 
-                                   id="txt_email" 
-                                   placeholder="Correo electrónico"
-                                   class="form-control"
-                                   aria-describedby="mail_help"
-                                   required>
-                            <small id="name_help" class="form-text text-muted">
-                                Verifique correctamente su correo electrónico antes de enviar el formulario.
-                            </small>
+                            <img src="../images/check.jpg" 
+                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 alt="">
                         </div>
+                    
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="../images/img1.png" 
+                                 alt=""
+                                 class="w-100 shadow-1-strong rounded mb-4">
 
-                        <div class="form-group">
-                            <label for="txt_message">Mensaje</label>
-                            <textarea class="form-control" id="txt_message" cols="30" rows="10"></textarea>
+                            <img src="../images/Kaori.jpg" 
+                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 alt="">
                         </div>
+                    
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="../images/Kaori1.png" 
+                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 alt="">
 
-                        <button class="btn btn-primary" type="submit">Enviar</button>
-                        <button class="btn btn-secondary" type="reset">Limpiar</button>
-                    </form>
+                            <img src="../images/novedades.jpeg" 
+                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 alt="">
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="videos-gallery">
+                    <h2>Videos</h2>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-6 mb-lg-0">
+                            <iframe src="https://drive.google.com/file/d/1tCdSs4AwDgj-w72hhFh0-qdTvU5ht-z-/preview" class="w-100 shadow-1-strong rounded mb-4 videos-iframe"></iframe>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-6 mb-lg-0">
+                            <iframe src="https://drive.google.com/file/d/1tCdSs4AwDgj-w72hhFh0-qdTvU5ht-z-/preview" class="w-100 shadow-1-strong rounded mb-4 videos-iframe"></iframe>    
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
