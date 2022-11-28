@@ -23,6 +23,7 @@
         <meta name="description" 
               content="Galería de imágenes y videos del juego plataformero para PC, ¡Regrets!">
         <meta name="keywords"  content="Videojuegos, metroidvania, regrets, plataformero, juego para pc">
+        <meta name="author" content="Federico Piedrasanta">
     </head>
     <body>
         <header>
@@ -79,46 +80,95 @@
                     <!-- Gallery -->
                     <div class="row">
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <img src="../images/bosque.jpeg" 
-                                 class="w-100 shadow-1-strong rounded mb-4"
-                                 alt="Nivel del bosque del juego">
+                            <div class="image-container mb-4">
+                                <img src="../images/bosque.jpeg" 
+                                     class="w-100 shadow-1-strong rounded image"
+                                     alt="Nivel del bosque del juego">
+                                
+                                    <div class="middle">
+                                    <div class="text">Nivel del bosque</div>
+                                </div>
+                            </div>
 
-                            <img src="../images/check.jpg" 
-                                 class="w-100 shadow-1-strong rounded mb-4"
-                                 alt="Diseño de check point">
+                            <div class="image-container mb-4">
+                                <img src="../images/check.jpg" 
+                                     class="w-100 shadow-1-strong rounded image"
+                                     alt="Diseño de check point">
+                                
+                                <div class="middle">
+                                    <div class="text">Checkpoint!</div>
+                                </div>
+                            </div>
                         </div>
                     
                         <div class="col-lg-4 mb-4 mb-lg-0">
-                            <img src="../images/img1.png" 
-                                 alt="Portada del juego"
-                                 class="w-100 shadow-1-strong rounded mb-4">
+                            <div class="image-container mb-4">
+                                <img src="../images/img1.png" 
+                                     alt="Portada del juego"
+                                     class="w-100 shadow-1-strong rounded image">
+                                
+                                <div class="middle">
+                                    <div class="text">Portada</div>
+                                </div>
+                            </div>
 
-                            <img src="../images/Kaori.jpg" 
-                                 class="w-100 shadow-1-strong rounded mb-4"
-                                 alt="Personaje principal del juego">
+                            <div class="image-container mb-4">
+                                <img src="../images/Kaori.jpg" 
+                                     class="w-100 shadow-1-strong rounded image"
+                                     alt="Kaori">
+                                
+                                <div class="middle">
+                                    <div class="text">Kaori</div>
+                                </div>
+                            </div>
                         </div>
                     
                         <div class="col-lg-4 mb-4 mb-lg-0">
-                            <img src="../images/Kaori1.png" 
-                                 class="w-100 shadow-1-strong rounded mb-4"
-                                 alt="Concept art del personaje principal del juego">
+                            <div class="image-container mb-4">
+                                <img src="../images/Kaori1.png" 
+                                     class="w-100 shadow-1-strong rounded image"
+                                     alt="Concept art del personaje principal del juego">
+                                
+                                <div class="middle">
+                                    <div class="text">Concept art Kaori</div>
+                                </div>
+                            </div>
 
-                            <img src="../images/novedades.jpeg" 
-                                 class="w-100 shadow-1-strong rounded mb-4"
-                                 alt="Concept art del nivel de las montañas">
+                            <div class="image-container mb-4">
+                                <img src="../images/novedades.jpeg" 
+                                     class="w-100 shadow-1-strong rounded image"
+                                     alt="Concept art del nivel de las montañas">
+                                
+                                <div class="middle">
+                                    <div class="text">Concept art nivel montañas</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <hr>
                 <section class="videos-gallery">
-                    <h2>Videos</h2>
-                    
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 mb-6 mb-lg-0">
-                            <iframe src="https://drive.google.com/file/d/1tCdSs4AwDgj-w72hhFh0-qdTvU5ht-z-/preview" class="w-100 shadow-1-strong rounded mb-4 videos-iframe"></iframe>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mb-6 mb-lg-0">
-                            <iframe src="https://drive.google.com/file/d/1tCdSs4AwDgj-w72hhFh0-qdTvU5ht-z-/preview" class="w-100 shadow-1-strong rounded mb-4 videos-iframe"></iframe>    
+                        <div class="video-item">
+                            <div class="video-overlay"></div>
+                            
+                            <video class="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                <source src="http://nepsdns.no-ip.biz/bootstrap4/regrets_trailer.mp4" type="video/mp4">
+                            </video>
+
+                            <!--
+                            <video class="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                <source src="../videos/regrets_trailer.mp4" type="video/mp4">
+                            </video>
+                            -->
+                            
+                            <div class="video-container h-100">
+                                <div class="d-flex h-100 text-center align-items-top">
+                                    <div class="w-100 text-white">
+                                        <h1 class="display-3">¡Nuevo trailer!</h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
